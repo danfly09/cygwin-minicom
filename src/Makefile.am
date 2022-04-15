@@ -35,3 +35,4 @@ minicom_keyserv_LDADD = @LIBINTL@ $(MINICOM_LIBPORT)
 runscript_LDADD = @LIBINTL@ $(MINICOM_LIBPORT)
 
 EXTRA_DIST = functions.c
+DEFS = @DEFS@ -D_UWIN2P0

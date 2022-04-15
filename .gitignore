@@ -32,6 +32,7 @@ intl
 autom4te.cache
 stamp-h1
 *.o
+*.exe
 src/minicom
 src/runscript
 src/ascii-xfr

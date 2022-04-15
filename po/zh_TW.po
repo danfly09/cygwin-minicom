@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: minicom 2.6.1.90\n"
 "Report-Msgid-Bugs-To: minicom-devel@lists.alioth.debian.org\n"
-"POT-Creation-Date: 2021-12-11 20:36+0100\n"
+"POT-Creation-Date: 2022-04-15 01:49-0400\n"
 "PO-Revision-Date: 2013-02-12 23:37+0800\n"
 "Last-Translator: Wei-Lun Chao <bluebat@member.fsf.org>\n"
 "Language-Team: Chinese (traditional) <zh-l10n@linux.org.tw>\n"
@@ -1218,78 +1218,78 @@ msgstr "部分功能 Jukka Lahtinen 1997-2000"
 msgid "i18n by Arnaldo Carvalho de Melo 1998"
 msgstr "多國語言 Arnaldo Carvalho de Melo 1998"
 
-#: src/main.c:318
+#: src/main.c:313
 #, c-format
 msgid "Lockfile %s cannot be queried (%d).\n"
 msgstr ""
 
-#: src/main.c:326
+#: src/main.c:321
 #, c-format
 msgid "Lockfile %s owned by someone else (uid=%d).\n"
 msgstr ""
 
-#: src/main.c:336
+#: src/main.c:331
 #, fuzzy, c-format
 msgid "Device %s is locked by someone else.\n"
 msgstr "設備 %s 已鎖定。\n"
 
-#: src/main.c:355
+#: src/main.c:350
 #, c-format
 msgid "Lockfile is stale. Overriding it..\n"
 msgstr "鎖定檔已失去時效。要覆寫它..\n"
 
-#: src/main.c:364 src/updown.c:499
+#: src/main.c:359 src/updown.c:499
 #, c-format
 msgid "Device %s is locked.\n"
 msgstr "設備 %s 已鎖定。\n"
 
-#: src/main.c:380
+#: src/main.c:375
 #, c-format
 msgid "Could not setup for dial out.\n"
 msgstr "無法設定為撥出。\n"
 
-#: src/main.c:429
+#: src/main.c:424
 #, c-format
 msgid "minicom: cannot open %s: %s\n"
 msgstr "minicom: 無法開啟檔案 %s: %s\n"
 
-#: src/main.c:432
+#: src/main.c:427
 #, c-format
 msgid "minicom: cannot open %s. Sorry.\n"
 msgstr "minicom: 無法開啟 %s。抱歉。\n"
 
-#: src/main.c:439 src/main.c:982
+#: src/main.c:434 src/main.c:923
 #, c-format
 msgid "Cannot open %s!"
 msgstr "無法開啟 %s！"
 
-#: src/main.c:602
+#: src/main.c:597
 #, fuzzy
 msgid "%H for help | %b | %C | Minicom %V | %T | %t | %D"
 msgstr " %7.7sZ 獲得說明 |           |     | Minicom %-6.6s |       | "
 
-#: src/main.c:677
+#: src/main.c:670
 msgid "Offline"
 msgstr "離線"
 
-#: src/main.c:677
+#: src/main.c:670
 msgid "OFFLINE"
 msgstr "離線"
 
-#: src/main.c:680
+#: src/main.c:673
 msgid "Online"
 msgstr "連線"
 
-#: src/main.c:680
+#: src/main.c:673
 msgid "ONLINE"
 msgstr "連線"
 
-#: src/main.c:753
+#: src/main.c:746
 #, c-format
 msgid "Gone offline (%ld:%02ld:%02ld)"
 msgstr "已掛斷 (%ld:%02ld:%02ld)"
 
-#: src/main.c:962
+#: src/main.c:903
 msgid "Could not re-initialize window system."
 msgstr "無法重新初始化視窗系統。"
 
@@ -1381,17 +1381,17 @@ msgid ""
 msgstr ""
 "  引用: ENTER=選取結束列 ESC=離開                                          "
 
-#: src/minicom.c:875
+#: src/minicom.c:825
 #, c-format
 msgid "Wrong option in environment MINICOM=\"%s\"\n"
 msgstr "錯誤的選項於環境變數 MINICOM=「%s」\n"
 
-#: src/minicom.c:876
+#: src/minicom.c:826
 #, c-format
 msgid "Type \"minicom %s\" for help.\n"
 msgstr "鍵入 \"minicom %s\" 以顯示說明。\n"
 
-#: src/minicom.c:886
+#: src/minicom.c:836
 #, fuzzy, c-format
 msgid ""
 "Usage: %s [OPTION]... [configuration]\n"
@@ -1457,17 +1457,17 @@ msgstr ""
 "\n"
 "這些選項也可以被指定於 MINICOM 環境變數中。\n"
 
-#: src/minicom.c:917
+#: src/minicom.c:867
 #, c-format
 msgid "This variable is currently set to \"%s\".\n"
 msgstr "這個變數目前被設定為「%s」。\n"
 
-#: src/minicom.c:919
+#: src/minicom.c:869
 #, c-format
 msgid "This variable is currently unset.\n"
 msgstr "這個變數目前未被設定。\n"
 
-#: src/minicom.c:922
+#: src/minicom.c:872
 #, c-format
 msgid ""
 "The configuration directory for the access file and the configurations\n"
@@ -1480,47 +1480,43 @@ msgstr ""
 "\n"
 "錯誤通報給 <minicom-devel@lists.alioth.debian.org>。\n"
 
-#: src/minicom.c:1037
+#: src/minicom.c:987
 #, c-format
 msgid "Activating iconv failed with: %s (%d)\n"
 msgstr ""
 
-#: src/minicom.c:1185
+#: src/minicom.c:1129
 msgid "Timestamp OFF"
 msgstr "關閉時間戳記"
 
-#: src/minicom.c:1188
+#: src/minicom.c:1132
 msgid "Timestamp every line (simple)"
 msgstr "每列時間戳記 (簡單)"
 
-#: src/minicom.c:1191
+#: src/minicom.c:1135
 msgid "Timestamp every line (extended)"
 msgstr "每列時間戳記 (進階)"
 
-#: src/minicom.c:1194
+#: src/minicom.c:1138
 msgid "Timestamp lines every second"
 msgstr "每秒時間戳記列"
 
-#: src/minicom.c:1197
+#: src/minicom.c:1141
 #, fuzzy
 msgid "Timestamp delta between lines"
 msgstr "每列時間戳記 (簡單)"
 
-#: src/minicom.c:1200
-msgid "Timestamp relative to trigger pattern"
-msgstr ""
-
-#: src/minicom.c:1367
+#: src/minicom.c:1308
 #, c-format
 msgid "%s version %s"
 msgstr "%s 版本 %s"
 
-#: src/minicom.c:1369
+#: src/minicom.c:1310
 #, c-format
 msgid " (compiled %s)"
 msgstr "(已編譯 %s)"
 
-#: src/minicom.c:1372
+#: src/minicom.c:1313
 #, c-format
 msgid ""
 "Copyright (C) Miquel van Smoorenburg.\n"
@@ -1529,7 +1525,7 @@ msgstr ""
 "版權所有 (C) Miquel van Smoorenburg。\n"
 "\n"
 
-#: src/minicom.c:1373
+#: src/minicom.c:1314
 #, c-format
 msgid ""
 "This program is free software; you can redistribute it and/or\n"
@@ -1539,55 +1535,55 @@ msgid ""
 "\n"
 msgstr ""
 
-#: src/minicom.c:1395
+#: src/minicom.c:1336
 #, c-format
 msgid "minicom: argument to -p must be a pty\n"
 msgstr "minicom: -p 之後的引數必須是一個 pty\n"
 
-#: src/minicom.c:1460
+#: src/minicom.c:1401
 #, fuzzy, c-format
 msgid "Cannot open capture file\n"
 msgstr "無法開啟截取檔案"
 
-#: src/minicom.c:1478
+#: src/minicom.c:1419
 #, c-format
 msgid "Invalid buffering mode '%s'\n"
 msgstr ""
 
-#: src/minicom.c:1548
+#: src/minicom.c:1487
 msgid "You don't exist. Go away.\n"
 msgstr "您並不存在。請走開。\n"
 
-#: src/minicom.c:1629
+#: src/minicom.c:1568
 msgid "Sorry. Your screen is too small.\n"
 msgstr "抱歉。您的螢幕太小。\n"
 
-#: src/minicom.c:1707
+#: src/minicom.c:1646
 msgid "Welcome to minicom"
 msgstr "歡迎使用 minicom"
 
-#: src/minicom.c:1708
+#: src/minicom.c:1647
 msgid "OPTIONS"
 msgstr "選項"
 
-#: src/minicom.c:1710
+#: src/minicom.c:1649
 msgid "Compiled on"
 msgstr "編譯於"
 
-#: src/minicom.c:1726
+#: src/minicom.c:1665
 msgid "Port"
 msgstr "通訊埠"
 
-#: src/minicom.c:1730
+#: src/minicom.c:1669
 msgid "Using character set conversion"
 msgstr "使用字元集轉換"
 
-#: src/minicom.c:1731
+#: src/minicom.c:1670
 #, fuzzy
 msgid " (failed test)"
 msgstr "(已編譯 %s)"
 
-#: src/minicom.c:1732
+#: src/minicom.c:1671
 #, c-format
 msgid ""
 "\n"
@@ -1598,67 +1594,67 @@ msgstr ""
 "按 %sZ 說明特殊鍵 %c\n"
 "\n"
 
-#: src/minicom.c:1753
+#: src/minicom.c:1692
 msgid "Add linefeed ON"
 msgstr "開啟加入換列鍵"
 
-#: src/minicom.c:1753
+#: src/minicom.c:1692
 msgid "Add linefeed OFF"
 msgstr "關閉加入換列鍵"
 
-#: src/minicom.c:1758
+#: src/minicom.c:1697
 msgid "Add carriage return ON"
 msgstr "開啟加入換列字元"
 
-#: src/minicom.c:1758
+#: src/minicom.c:1697
 msgid "Add carriage return OFF"
 msgstr "關閉加入換列字元"
 
-#: src/minicom.c:1763
+#: src/minicom.c:1702
 msgid "Local echo ON"
 msgstr "開啟本地回應"
 
-#: src/minicom.c:1763
+#: src/minicom.c:1702
 msgid "Local echo OFF"
 msgstr "關閉本地回應"
 
-#: src/minicom.c:1782
+#: src/minicom.c:1721
 msgid "You are online. Really initialize?"
 msgstr "您正在線上。真的要初始化？"
 
-#: src/minicom.c:1789
+#: src/minicom.c:1728
 msgid "Leave without reset?"
 msgstr "離開而不重置？"
 
-#: src/minicom.c:1793 src/minicom.c:1811
+#: src/minicom.c:1732 src/minicom.c:1750
 msgid "Save macros?"
 msgstr "儲存巨集？"
 
-#: src/minicom.c:1803
+#: src/minicom.c:1742
 msgid "Leave Minicom?"
 msgstr "離開 Minicom？"
 
-#: src/minicom.c:1822
+#: src/minicom.c:1761
 msgid "Capture to which file? "
 msgstr "截取至那一個檔案？"
 
-#: src/minicom.c:1826
+#: src/minicom.c:1765
 msgid "Cannot open capture file"
 msgstr "無法開啟截取檔案"
 
-#: src/minicom.c:1832 src/minicom.c:1841
+#: src/minicom.c:1771 src/minicom.c:1780
 msgid "Capture file"
 msgstr "截取的檔案"
 
-#: src/minicom.c:1875
+#: src/minicom.c:1814
 msgid "Linewrap ON"
 msgstr "開啟折列"
 
-#: src/minicom.c:1875
+#: src/minicom.c:1814
 msgid "Linewrap OFF"
 msgstr "關閉折列"
 
-#: src/minicom.c:1918
+#: src/minicom.c:1857
 msgid "Quit without reset while online."
 msgstr "若在線上離開時不會重置。"
 

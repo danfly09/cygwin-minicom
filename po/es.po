@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: minicom 2.6.1.90\n"
 "Report-Msgid-Bugs-To: minicom-devel@lists.alioth.debian.org\n"
-"POT-Creation-Date: 2021-12-11 20:36+0100\n"
+"POT-Creation-Date: 2022-04-15 01:49-0400\n"
 "PO-Revision-Date: 2018-03-06 13:36+0100\n"
 "Last-Translator: Javier Polo Cózar <jpcozar@yahoo.es>\n"
 "Language-Team: Spanish <es@tp.org.es>\n"
@@ -1241,78 +1241,78 @@ msgstr "Algunas contribuciones por Jukka Lahtinen 1997-1999"
 msgid "i18n by Arnaldo Carvalho de Melo 1998"
 msgstr "i18n por Arnaldo Carvalho de Melo 1998"
 
-#: src/main.c:318
+#: src/main.c:313
 #, c-format
 msgid "Lockfile %s cannot be queried (%d).\n"
 msgstr ""
 
-#: src/main.c:326
+#: src/main.c:321
 #, c-format
 msgid "Lockfile %s owned by someone else (uid=%d).\n"
 msgstr ""
 
-#: src/main.c:336
+#: src/main.c:331
 #, fuzzy, c-format
 msgid "Device %s is locked by someone else.\n"
 msgstr "El dispositivo %s está bloqueado.\n"
 
-#: src/main.c:355
+#: src/main.c:350
 #, c-format
 msgid "Lockfile is stale. Overriding it..\n"
 msgstr "Fichero de bloqueo inválido. Desestimándolo..\n"
 
-#: src/main.c:364 src/updown.c:499
+#: src/main.c:359 src/updown.c:499
 #, c-format
 msgid "Device %s is locked.\n"
 msgstr "El dispositivo %s está bloqueado.\n"
 
-#: src/main.c:380
+#: src/main.c:375
 #, c-format
 msgid "Could not setup for dial out.\n"
 msgstr "La comunicación con el exterior no ha podido ser configurada.\n"
 
-#: src/main.c:429
+#: src/main.c:424
 #, c-format
 msgid "minicom: cannot open %s: %s\n"
 msgstr "minicom: no se puede abrir %s: %s\n"
 
-#: src/main.c:432
+#: src/main.c:427
 #, c-format
 msgid "minicom: cannot open %s. Sorry.\n"
 msgstr "minicom: no fue posible abrir %s. Lo siento\n"
 
-#: src/main.c:439 src/main.c:982
+#: src/main.c:434 src/main.c:923
 #, c-format
 msgid "Cannot open %s!"
 msgstr "No fue posible abrir %s!"
 
-#: src/main.c:602
+#: src/main.c:597
 #, fuzzy
 msgid "%H for help | %b | %C | Minicom %V | %T | %t | %D"
 msgstr "  Ayuda: %7.7sZ  |           |     | Minicom %-6.6s |       | "
 
-#: src/main.c:677
+#: src/main.c:670
 msgid "Offline"
 msgstr "Desconectado"
 
-#: src/main.c:677
+#: src/main.c:670
 msgid "OFFLINE"
 msgstr "DESCONECTADO"
 
-#: src/main.c:680
+#: src/main.c:673
 msgid "Online"
 msgstr "Conectado"
 
-#: src/main.c:680
+#: src/main.c:673
 msgid "ONLINE"
 msgstr "CONECTADO"
 
-#: src/main.c:753
+#: src/main.c:746
 #, c-format
 msgid "Gone offline (%ld:%02ld:%02ld)"
 msgstr "Desconectado (%ld:%02ld:%02ld)"
 
-#: src/main.c:962
+#: src/main.c:903
 msgid "Could not re-initialize window system."
 msgstr "No fue posible reiniciar el sistema de ventanas."
 
@@ -1407,17 +1407,17 @@ msgstr ""
 "  CITACIÓN: ENTER=selecciona línea final "
 "ESC=salir                            "
 
-#: src/minicom.c:875
+#: src/minicom.c:825
 #, c-format
 msgid "Wrong option in environment MINICOM=\"%s\"\n"
 msgstr "Opción inválida en la variable de entorno MINICOM=%s\n"
 
-#: src/minicom.c:876
+#: src/minicom.c:826
 #, c-format
 msgid "Type \"minicom %s\" for help.\n"
 msgstr "Teclee \"minicom %s\" para obtener ayuda.\n"
 
-#: src/minicom.c:886
+#: src/minicom.c:836
 #, fuzzy, c-format
 msgid ""
 "Usage: %s [OPTION]... [configuration]\n"
@@ -1491,17 +1491,17 @@ msgstr ""
 "Estas opciones pueden especificarse también en la variable de entorno "
 "MINICOM.\n"
 
-#: src/minicom.c:917
+#: src/minicom.c:867
 #, c-format
 msgid "This variable is currently set to \"%s\".\n"
 msgstr "Esta variable actualmente tiene el siguiente valor \"%s\".\n"
 
-#: src/minicom.c:919
+#: src/minicom.c:869
 #, c-format
 msgid "This variable is currently unset.\n"
 msgstr "Esta variable está actualmente sin asignar.\n"
 
-#: src/minicom.c:922
+#: src/minicom.c:872
 #, c-format
 msgid ""
 "The configuration directory for the access file and the configurations\n"
@@ -1515,47 +1515,43 @@ msgstr ""
 "\n"
 "Informe de fallos a <minicom-devel@lists.alioth.debian.org>.\n"
 
-#: src/minicom.c:1037
+#: src/minicom.c:987
 #, c-format
 msgid "Activating iconv failed with: %s (%d)\n"
 msgstr ""
 
-#: src/minicom.c:1185
+#: src/minicom.c:1129
 msgid "Timestamp OFF"
 msgstr "Sello de tiempo DESACTIVADO"
 
-#: src/minicom.c:1188
+#: src/minicom.c:1132
 msgid "Timestamp every line (simple)"
 msgstr "Sello de tiempo en cada línea (simple)"
 
-#: src/minicom.c:1191
+#: src/minicom.c:1135
 msgid "Timestamp every line (extended)"
 msgstr "Sello de tiempo en cada líena (extendido)"
 
-#: src/minicom.c:1194
+#: src/minicom.c:1138
 msgid "Timestamp lines every second"
 msgstr "Sello de tiempo de líneas cada segundo"
 
-#: src/minicom.c:1197
+#: src/minicom.c:1141
 #, fuzzy
 msgid "Timestamp delta between lines"
 msgstr "Sello de tiempo en cada línea (simple)"
 
-#: src/minicom.c:1200
-msgid "Timestamp relative to trigger pattern"
-msgstr ""
-
-#: src/minicom.c:1367
+#: src/minicom.c:1308
 #, c-format
 msgid "%s version %s"
 msgstr "%s version %s"
 
-#: src/minicom.c:1369
+#: src/minicom.c:1310
 #, c-format
 msgid " (compiled %s)"
 msgstr " (compilado %s)"
 
-#: src/minicom.c:1372
+#: src/minicom.c:1313
 #, c-format
 msgid ""
 "Copyright (C) Miquel van Smoorenburg.\n"
@@ -1564,7 +1560,7 @@ msgstr ""
 "Copyright (C) Miquel van Smoorenburg.\n"
 "\n"
 
-#: src/minicom.c:1373
+#: src/minicom.c:1314
 #, c-format
 msgid ""
 "This program is free software; you can redistribute it and/or\n"
@@ -1574,55 +1570,55 @@ msgid ""
 "\n"
 msgstr ""
 
-#: src/minicom.c:1395
+#: src/minicom.c:1336
 #, c-format
 msgid "minicom: argument to -p must be a pty\n"
 msgstr "minicom: el argumento para la opción -p debe ser un pty\n"
 
-#: src/minicom.c:1460
+#: src/minicom.c:1401
 #, fuzzy, c-format
 msgid "Cannot open capture file\n"
 msgstr "No se puede abrir fichero de captura"
 
-#: src/minicom.c:1478
+#: src/minicom.c:1419
 #, c-format
 msgid "Invalid buffering mode '%s'\n"
 msgstr ""
 
-#: src/minicom.c:1548
+#: src/minicom.c:1487
 msgid "You don't exist. Go away.\n"
 msgstr "Usted no existe. Váyase.\n"
 
-#: src/minicom.c:1629
+#: src/minicom.c:1568
 msgid "Sorry. Your screen is too small.\n"
 msgstr "Lo siento. Su pantalla es demasiado pequeña.\n"
 
-#: src/minicom.c:1707
+#: src/minicom.c:1646
 msgid "Welcome to minicom"
 msgstr "Bienvenido a minicom"
 
-#: src/minicom.c:1708
+#: src/minicom.c:1647
 msgid "OPTIONS"
 msgstr "OPCIONES"
 
-#: src/minicom.c:1710
+#: src/minicom.c:1649
 msgid "Compiled on"
 msgstr "Compilado en"
 
-#: src/minicom.c:1726
+#: src/minicom.c:1665
 msgid "Port"
 msgstr "Puerto"
 
-#: src/minicom.c:1730
+#: src/minicom.c:1669
 msgid "Using character set conversion"
 msgstr "Usando conversión de caracteres"
 
-#: src/minicom.c:1731
+#: src/minicom.c:1670
 #, fuzzy
 msgid " (failed test)"
 msgstr " (compilado %s)"
 
-#: src/minicom.c:1732
+#: src/minicom.c:1671
 #, c-format
 msgid ""
 "\n"
@@ -1633,67 +1629,67 @@ msgstr ""
 "Presione %sZ para obtener ayuda sobre teclas especiales%c\n"
 "\n"
 
-#: src/minicom.c:1753
+#: src/minicom.c:1692
 msgid "Add linefeed ON"
 msgstr "Añadir salto de línea ACTIVADO"
 
-#: src/minicom.c:1753
+#: src/minicom.c:1692
 msgid "Add linefeed OFF"
 msgstr "Añadir salto de línea DESACTIVADO"
 
-#: src/minicom.c:1758
+#: src/minicom.c:1697
 msgid "Add carriage return ON"
 msgstr "Añadir retorno de carro ACTIVADO"
 
-#: src/minicom.c:1758
+#: src/minicom.c:1697
 msgid "Add carriage return OFF"
 msgstr "Añadir retorno de carro DESACTIVADO"
 
-#: src/minicom.c:1763
+#: src/minicom.c:1702
 msgid "Local echo ON"
 msgstr "Eco local ACTIVADO"
 
-#: src/minicom.c:1763
+#: src/minicom.c:1702
 msgid "Local echo OFF"
 msgstr "Eco local DESACTIVADO"
 
-#: src/minicom.c:1782
+#: src/minicom.c:1721
 msgid "You are online. Really initialize?"
 msgstr "Usted está conectado. ¿Quiere realmente inicializar?"
 
-#: src/minicom.c:1789
+#: src/minicom.c:1728
 msgid "Leave without reset?"
 msgstr "¿Salir sin reinicializar?"
 
-#: src/minicom.c:1793 src/minicom.c:1811
+#: src/minicom.c:1732 src/minicom.c:1750
 msgid "Save macros?"
 msgstr "¿Guardar macros?"
 
-#: src/minicom.c:1803
+#: src/minicom.c:1742
 msgid "Leave Minicom?"
 msgstr "¿Salir del Minicom?"
 
-#: src/minicom.c:1822
+#: src/minicom.c:1761
 msgid "Capture to which file? "
 msgstr "¿Capturar en qué fichero? "
 
-#: src/minicom.c:1826
+#: src/minicom.c:1765
 msgid "Cannot open capture file"
 msgstr "No se puede abrir fichero de captura"
 
-#: src/minicom.c:1832 src/minicom.c:1841
+#: src/minicom.c:1771 src/minicom.c:1780
 msgid "Capture file"
 msgstr "Capturar fichero"
 
-#: src/minicom.c:1875
+#: src/minicom.c:1814
 msgid "Linewrap ON"
 msgstr "Ajuste automático de línea ACTIVADO"
 
-#: src/minicom.c:1875
+#: src/minicom.c:1814
 msgid "Linewrap OFF"
 msgstr "Ajuste automático de línea DESACTIVADO"
 
-#: src/minicom.c:1918
+#: src/minicom.c:1857
 msgid "Quit without reset while online."
 msgstr "Salió sin reiniciar mientras estaba conectado."
 
