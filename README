@@ -1,39 +1,34 @@
+## README ##
 
-                                 **************
-                                 *   README   *
-                                 **************
+Forked branch from original project and adapted to compile in cygwin for Windows. The original project can be found at <br>
+https://salsa.debian.org/minicom-team/minicom/-/tree/master
 
-Quick instructions for an installation of a release package:
+Your COM ports are mapped as /dev/ttyS# <br>
+COM1 will be /dev/ttyS0 and so on. 
 
-1. Change to the minicom-$VERSION directory.
-2. ./configure (see ./configure --help for options)
-3. make
-4. make install
-5. minicom -s (for changing /etc/minicom you probably need to run it as root)
-   Change what should be changed on your system, and choose
-   'Save setup as dfl' from the configuration menu to save the
-   changed settings as system defaults.
-   Now add every user which should be allowed to use minicom to
-   the group of the corresponding character devices (e.g. /dev/ttyS0).
-   On Debian this group already exists and is called 'dialout'.
+Tested it on the following machine but I believe it 
+should run on any Windows machine with Cygwin installed
 
-Now you should have minicom compiled, installed and ready to use.
+   `Windows 10 Home` <br>
+   `Version	21H2` <br>
+   `OS build	19044.1645`
 
-For more information, have a look at the other files.
+**Remember:** to install <br>
+`gcc-core, gcc-g++, make, autoconf, gettext,  libncurses-devel, libiconv-devel`
 
-WWW: For information about the newest version, what has changed since the
-previous version, and sometimes possibly the newest beta version (if there
-is one available), look at https://salsa.debian.org/minicom-team/minicom.
+I believe those were all the packages needed but I might be 
+forgetting one or two as I had to come back over and over every
+time the compilation failed. 
 
-Current development version of minicom can be found here:
-https://salsa.debian.org/minicom-team/minicom
+**TODO:** Add/Update autocheck scripts to make sure you have all required packages before running make. 
 
-To compile and install a development version:
-1. git clone https://salsa.debian.org/minicom-team/minicom.git
+Quick instructions:
+-------------------
+
+1. git clone <this-repository>
 2. cd minicom
 3. ./autogen.sh
 4. ./configure (see ./configure --help for options)
 5. make
 6. make install
 
-adam@lackorzynski.de
